@@ -12,7 +12,7 @@ jQuery(function ($) {
 
     // Intro Animation.
     if($('body').hasClass('pc')) {
-        $('html, body').scrollTop(0).css({
+        $('html').scrollTop(0).css({
             scrollTop: 0,
             'overflow': 'hidden'
         });
@@ -27,7 +27,7 @@ jQuery(function ($) {
                 $('#fv nav li').addClass('comp');
 
                 setTimeout(function () {
-                    $('html, body').css({
+                    $('html').css({
                         'overflow': 'scroll'
                     });
                 }, 1000);
